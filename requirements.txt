@@ -17,3 +17,4 @@ sqlparse==0.3.1
 tzdata==2023.3
 urllib3==1.26.15
 whitenoise==5.0.1
+mysqlclient==2.1.1
