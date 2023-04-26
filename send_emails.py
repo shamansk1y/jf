@@ -63,7 +63,7 @@ to = ADMIN_USER
 _html = ''
 if qs.exists():
     error = qs.first()
-    data = error.data.get('errors', [])
+    data = error.get('errors', [])
     for i in data:
         _html += f'<p"><a href="{ i["url"] }">Error: { i["title"] }</a></p><br>'
     subject += f"Ошибки скрапинга {today}"
